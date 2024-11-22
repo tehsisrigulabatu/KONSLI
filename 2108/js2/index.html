@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let value = prompt("masukkan angka: ");
+
+      value = parseInt(value);
+
+      if (!isNaN(value)) {
+        if (value % 2 != 0) {
+          console.log("ini angka ganjil");
+        } else {
+          console.log("ini adalah bilangan genap");
+        }
+      } else {
+        console.log("ini bukan angka");
+      }
+    </script>
+  </body>
+</html>

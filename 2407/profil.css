@@ -1,0 +1,23 @@
+
+
+table, tr, td, th {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    border: 1px brown solid;
+    color: brown;
+}
+
+h1 {
+    font-family: arial, sans-serif;
+    color: brown;
+}
+
+p {
+    font-family: arial, sans-serif;
+    color: brown;
+}
+
+ul, li {
+    font-family: arial, sans-serif;
+    color: brown;
+}

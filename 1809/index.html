@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM JS</title>
+</head>
+<body>
+
+    
+    <!-- <h1 class="tulisan">DOM</h1> -->
+
+    <!-- <ul id="pohon">
+        <li id="cabang1">cabang 1</li>
+        <li id="cabang2">cabang 2</li>
+        <li id="cabang3">cabang 3</li>
+    </ul> -->
+
+    
+    <div id="content">
+        <h1 class="title" id="title">dom</h1>
+        <p id="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias odit provident quos laudantium non a placeat facere sed dolorem voluptas, enim recusandae, excepturi nihil deleniti possimus quis. Iusto omnis itaque iure, ipsa eum natus autem maiores eaque tempora neque, dolorum qui ipsum, fugit cum veritatis.</p>
+    </div>
+
+    </div>
+    <script>
+        
+        //let contoh = document.getElementsByClassName("tulisan");
+
+        //console.log(contoh);
+
+        //const parent = document.getElementById("pohon");
+        //parent.removeChild(document.getElementById("cabang1"));
+       // console.info(parent);
+       // console.info(parent.children);
+        //const child = document.getElementById("cabang1");
+        //console.info(child.nextSibling);
+
+        const content = document.getElementById("content");
+
+        const title = document.getElementById("title");
+        title.textContent = "DOM JS";
+        const desc = document.getElementById("description");
+        desc.textContent = "abwabawabwa";
+
+        const comment = document.createElement("P");
+        comment.textContent = "gweh cantik bet anjay";
+        content.appendChild(comment);
+
+        //desc.remove();
+    </script>
+</body>
+</html>

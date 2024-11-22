@@ -1,0 +1,61 @@
+.header {grid-area: 'header';}
+.navbar {grid-area: 'navbar';}
+.content1 {grid-area: 'content1';}
+.content2 {grid-area: 'content2';}
+.content3 {grid-area: 'content3';}
+.footer {grid-area: 'footer';}
+
+.parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 'header navbar navbar navbar'
+                        'content1 content1 content1 content1'
+                        'content2 content2 content2 content2'
+                        'content3 content3 content3 content3'
+                        'footer footer footer footer footer';
+    gap: 5px;
+    background-color: greenyellow;
+    padding: 7px;
+
+}
+
+.parent > div {
+    background-color: #efc5c5;
+    text-align: center;
+    padding: 10px;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+/* iPhone 14 Pro  */
+@media (max-width: 430px) {
+    .parent {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 'header header'
+                            'navbar navbar'
+                            'content1'
+                            'content2'
+                            'content3'
+                            'footer';
+    }
+}
+
+/* iPad Mini  */
+
+@media (max-width: 768px) {
+    .parent {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 'header header navbar navbar'
+                            'content1'
+                            'content2'
+                            'content3'
+                            'footer';
+    }
+}
+
+h1 {
+    text-align: center;
+}

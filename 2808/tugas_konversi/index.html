@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Konversi panjang</title>
+  </head>
+  <body>
+    <script>
+      function konversi(km, jenisKonversi) {
+        let hasil;
+
+        if (jenisKonversi === "1") {
+          hasil = km * 10;
+          alert(`Hasil dari konversi adalah ${hasil} hm`);
+        } else if (jenisKonversi === "2") {
+          hasil = km * 100;
+          alert(`Hasil dari konversi adalah ${hasil} dam`);
+        } else if (jenisKonversi === "3") {
+          hasil = km * 1000;
+          alert(`Hasil dari konversi adalah ${hasil} m`);
+        } else if (jenisKonversi === "4") {
+          hasil = km * 10000;
+          alert(`Hasil dari konversi adalah ${hasil} dm`);
+        } else if (jenisKonversi === "5") {
+          hasil = km * 100000;
+          alert(`Hasil dari konversi adalah ${hasil} cm`);
+        } else if (jenisKonversi === "6") {
+          hasil = km * 1000000;
+          alert(`hasil dari konversi adalah ${hasil} mm`);
+        } else {
+          alert("Input tidak valid");
+        }
+      }
+
+      function apakahValid(jenis) {
+        if (isNaN(parseInt(jenis))) {
+          return false;
+        } else if (
+          jenis !== "1" &&
+          jenis !== "2" &&
+          jenis !== "3" &&
+          jenis !== "4" &&
+          jenis !== "5" &&
+          jenis !== "6"
+        ) {
+          return false;
+        }
+
+        return true;
+      }
+
+      let jenis = prompt(
+        "Masukkan jenis konversi dari kilometer \n 1. Hektometer \n 2. Dekameter \n 3. Meter \n 4. Desimeter \n 5. Sentimeter \n 6. Milimeter"
+      );
+      if (apakahValid(jenis)) {
+        let km = prompt("Masukkan jumlah angka yang ingin dikonversi: ");
+        konversi(km, jenis);
+      } else {
+        alert("Input tidak valid");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="page1">
+        <h1>Ini Halaman 1</h1>
+        <p>Selamat datang di halaman 1.</p>
+        <a href="#page2" onclick="navigate(event, 'page2')">Pergi ke Halaman 2</a>
+      </div>
+    
+      <div id="page2" class="hidden">
+        <h1>Ini Halaman 2</h1>
+        <p>Ini konten di halaman 2.</p>
+        <a href="#page1" onclick="navigate(event, 'page1')">Kembali ke Halaman 1</a>
+      </div>
+    
+      <script>
+        // Fungsi untuk mengganti halaman dengan preventDefault
+        function navigate(event, pageId) {
+          event.preventDefault(); // Mencegah href menjalankan perilaku default
+    
+          // Sembunyikan semua halaman
+          document.getElementById('page1').classList.add('hidden');
+          document.getElementById('page2').classList.add('hidden');
+          
+          // Tampilkan halaman yang diinginkan
+          document.getElementById(pageId).classList.remove('hidden');
+        }
+      </script>
+</body>
+</html>

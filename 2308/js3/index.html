@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array</title>
+</head>
+<body>
+    <script>
+
+        //1. data
+        console.info("Data awal");
+        const doxing = [
+            {name: "Odi", age: 17, univ: "ITB", music: "Backburner"},
+            {name: "Frederic", age: 17, univ: "ITS", music: "Oddkind"},
+            {name: "Jennifer", age: 18, univ: "ITS", music: "Anugrah Terindah yang Pernah Kumiliki"},
+            {name: "Meo", age: 21, univ: "MIT", music: "Brooklyn Baby"}
+        ]
+
+        //2. displaying array on screen
+
+        doxing.forEach(dox => {
+            console.log(`This human named ${dox.name}. Their age is ${dox.age} years old, they went to ${dox.univ} for their college, and their favorite music is ${dox.music}`) 
+        })
+
+        //3. adding new data to array
+
+        console.info("Data setelah di-push");
+        const newDox = {name: "Notulen", age: 20, univ: "UNAIR", music: "Hopelessly Devoted to You"};
+        doxing.push(newDox);
+        doxing.forEach(dox => {
+            console.log(`This human named ${dox.name}. Their age is ${dox.age} years old, they went to ${dox.univ} for their college, and their favorite music is ${dox.music}`) 
+        })
+        
+
+        //4. removing a data from array
+        console.info("Data setelah di-remove");
+        const removeDox = doxing.findIndex(dox => dox.name === "Notulen");
+        if (removeDox !== -1) {
+        doxing.splice(removeDox, 1);
+        }
+        doxing.forEach(dox => {
+            console.log(`This human named ${dox.name}. Their age is ${dox.age} years old, they went to ${dox.univ} for their college, and their favorite music is ${dox.music}`) 
+        })
+
+    </script>
+</body>
+</html>

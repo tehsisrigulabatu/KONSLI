@@ -1,0 +1,245 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.smw {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.nav {
+  background-color: rgb(46, 167, 167);
+}
+
+.header {
+  background-color: rgb(63, 146, 146);
+}
+
+.containerdua {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  padding-top: 10px;
+}
+
+.anak {
+  height: 100px;
+}
+.anak.tiga {
+  background-color: rgb(237, 173, 173);
+  flex-grow: 1;
+}
+
+.anak.empat {
+  background-color: rgb(237, 173, 173);
+  flex-grow: 1;
+}
+
+.anak.lima {
+  background-color: rgb(237, 173, 173);
+  flex-grow: 1;
+}
+
+.anak.enam {
+  background-color: rgb(237, 173, 173);
+  flex-grow: 1;
+}
+
+.anak.tujuh {
+  background-color: rgb(237, 173, 173);
+  flex-grow: 1;
+}
+
+.containertiga {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  padding-top: 10px;
+}
+
+.anak.delapan {
+  background-color: rgb(237, 173, 173);
+  flex-grow: 1;
+}
+
+.anak.sembilan {
+  background-color: rgb(237, 173, 173);
+  flex-grow: 1;
+}
+
+.anak.sepuluh {
+  background-color: rgb(237, 173, 173);
+  flex-grow: 1;
+}
+
+.anak.sebelas {
+  background-color: rgb(237, 173, 173);
+  flex-grow: 1;
+}
+
+.anak.duabelas {
+  background-color: rgb(237, 173, 173);
+  flex-grow: 1;
+}
+
+.baru {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding-top: 10px;
+}
+
+.new {
+  background-color: rgb(46, 167, 167);
+}
+
+.containerempat {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  padding-top: 10px;
+  height: 100px;
+}
+
+.satu {
+  background-color: rgb(237, 173, 173);
+  flex-grow: 1;
+}
+
+.dua {
+  background-color: rgb(237, 173, 173);
+  flex-grow: 1;
+}
+
+.tiga {
+  background-color: rgb(237, 173, 173);
+  flex-grow: 1;
+}
+
+.empat {
+  background-color: rgb(237, 173, 173);
+  flex-grow: 1;
+}
+
+.lima {
+  background-color: rgb(237, 173, 173);
+  flex-grow: 1;
+}
+
+.genre {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding-top: 10px;
+}
+
+.jenis {
+  background-color: rgb(46, 167, 167);
+}
+
+.containerlima {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  padding-top: 10px;
+  height: 100px;
+}
+
+.one {
+  background-color: rgb(237, 173, 173);
+  flex-grow: 1;
+}
+
+.two {
+  background-color: rgb(237, 173, 173);
+  flex-grow: 1;
+}
+
+.three {
+  background-color: rgb(237, 173, 173);
+  flex-grow: 1;
+}
+
+.four {
+  background-color: rgb(237, 173, 173);
+  flex-grow: 1;
+}
+
+.five {
+  background-color: rgb(237, 173, 173);
+  flex-grow: 1;
+}
+
+.containerenam {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  padding-top: 10px;
+  height: 100px;
+}
+
+.six {
+  background-color: rgb(237, 173, 173);
+  flex-grow: 1;
+}
+
+.seven {
+  background-color: rgb(237, 173, 173);
+  flex-grow: 1;
+}
+
+.eight {
+  background-color: rgb(237, 173, 173);
+  flex-grow: 1;
+}
+
+.nine {
+  background-color: rgb(237, 173, 173);
+  flex-grow: 1;
+}
+
+.containertujuh {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  padding-top: 10px;
+  height: 100px;
+}
+
+.trending {
+  background-color: rgb(46, 167, 167);
+  flex-grow: 1;
+}
+
+.populer {
+  background-color: rgb(46, 167, 167);
+  flex-grow: 1;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding-top: 10px;
+}
+
+.kaki {
+  background-color: rgb(46, 167, 167);
+}

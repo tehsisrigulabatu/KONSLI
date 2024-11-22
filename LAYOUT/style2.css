@@ -1,0 +1,225 @@
+body {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 30px;
+}
+
+.container {
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  grid-template-areas:
+    "navbar   navbar   navbar  navbar  navbar"
+    "header   header   header  header  header"
+    "c1       c2       c3      c4      c5"
+    "c6       c7       c8      c9      c10"
+    "wb       wb       wb      wb      wb"
+    "d1       d2       d3      d4      d5"
+    "genre    genre    genre   genre   genre"
+    "one      two      three   four    five"
+    "six      seven    eight   nine    ten"
+    "trending trending popular popular popular"
+    "footer   footer   footer  footer  footer";
+  gap: 10px;
+}
+
+.anak {
+  padding: 10px;
+  height: 100px;
+}
+
+.anak.satu {
+  background-color: rgb(46, 167, 167);
+  grid-area: navbar;
+}
+
+.anak.dua {
+  background-color: rgb(63, 146, 146);
+  grid-area: header;
+}
+
+.anak.tiga {
+  background-color: rgb(237, 173, 173);
+  grid-area: c1;
+}
+
+.anak.empat {
+  background-color: rgb(237, 173, 173);
+  grid-area: c2;
+}
+
+.anak.lima {
+  background-color: rgb(237, 173, 173);
+  grid-area: c3;
+}
+
+.anak.enam {
+  background-color: rgb(237, 173, 173);
+  grid-area: c4;
+}
+
+.anak.tujuh {
+  background-color: rgb(237, 173, 173);
+  grid-area: c5;
+}
+
+.anak.delapan {
+  background-color: rgb(237, 173, 173);
+  grid-area: c6;
+}
+
+.anak.sembilan {
+  background-color: rgb(237, 173, 173);
+  grid-area: c7;
+}
+
+.anak.sepuluh {
+  background-color: rgb(237, 173, 173);
+  grid-area: c8;
+  grid-column: 1 / 4;
+}
+
+.anak.sebelas {
+  background-color: rgb(237, 173, 173);
+  grid-area: c9; }
+
+.anak.duabelas {
+    background-color: rgb(237, 173, 173);
+    grid-area: c10;
+}
+
+.tiga {
+  background-color: rgb(63, 146, 146);
+  grid-area: wb;
+}
+
+.baru.satu {
+  background-color: rgb(237, 173, 173);
+  grid-area: d1;
+}
+
+.baru.dua {
+  background-color: rgb(237, 173, 173);
+  grid-area: d2;
+}
+
+.baru.tiga {
+  background-color: rgb(237, 173, 173);
+  grid-area: d3;
+}
+
+.baru.empat {
+  background-color: rgb(237, 173, 173);
+  grid-area: d4;
+}
+
+.baru.lima {
+  background-color: rgb(237, 173, 173);
+  grid-area: d5;
+}
+
+.empat {
+  background-color: rgb(63, 146, 146);
+  grid-area: genre;
+}
+
+.one {
+  background-color: rgb(237, 173, 173);
+  grid-area: one;
+}
+
+.two {
+  background-color: rgb(237, 173, 173);
+  grid-area: two;
+}
+
+.three {
+  background-color: rgb(237, 173, 173);
+  grid-area: three;
+}
+
+.four {
+  background-color: rgb(237, 173, 173);
+  grid-area: four;
+}
+
+.five {
+  background-color: rgb(237, 173, 173);
+  grid-area: five;
+}
+
+.six {
+  background-color: rgb(237, 173, 173);
+  grid-area: six;
+}
+
+.seven {
+  background-color: rgb(237, 173, 173);
+  grid-area: seven;
+}
+
+.eight {
+  background-color: rgb(237, 173, 173);
+  grid-area: eight;
+  grid-column: 3 /6;
+}
+
+.nine {
+    background-color: rgb(237, 173, 173);
+    grid-area: nine;
+}
+
+.ten {
+    background-color: rgb(237, 173, 173);
+    grid-area: ten;
+}
+
+.trending {
+  background-color: rgb(101, 101, 148);
+  grid-area: trending;
+}
+
+.popular {
+  background-color: rgb(195, 153, 228);
+  grid-area: popular;
+}
+
+.footer {
+  background-color: rgb(63, 146, 146);
+  grid-area: footer;
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-areas:
+      "navbar   navbar   navbar  navbar  navbar"
+    "header   header   header  header  header"
+    "c1       c2       c3      c4      c5"
+    "c6       c7       c8      c9      c10"
+    "wb       wb       wb      wb      wb"
+    "d1       d2       d3      d4      d5"
+    "genre    genre    genre   genre   genre"
+    "one      two      three   four    five"
+    "six      seven    eight   nine    ten"
+    "trending trending popular popular popular"
+    "footer   footer   footer  footer  footer";
+  }
+}
+
+@media (max-width: 430px) {
+  .container {
+    grid-template-areas:
+      "navbar   navbar   navbar  navbar  navbar"
+    "header   header   header  header  header"
+    "c1       c2       c3      c4      c5"
+    "c6       c7       c8      c9      c10"
+    "wb       wb       wb      wb      wb"
+    "d1       d2       d3      d4      d5"
+    "genre    genre    genre   genre   genre"
+    "one      two      three   four    five"
+    "six      seven    eight   nine    ten"
+    "trending trending popular popular popular"
+    "footer   footer   footer  footer  footer";
+  }
+}
